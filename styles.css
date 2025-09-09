@@ -1,0 +1,109 @@
+:root {
+    --clr-purple-50: hsl(260, 100%, 95%);
+    --clr-purple-300: hsl(264, 82%, 80%);
+    --clr-purple-500: hsl(263, 55%, 52%);
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-100: hsl(214, 17%, 92%);
+    --clr-neutral-200: hsl(0, 0%, 81%);
+    --clr-neutral-400: hsl(224, 10%, 45%);
+    --clr-neutral-500: hsl(217, 19%, 35%);
+    --clr-neutral-darkblue: hsl(219, 29%, 14%);
+    --clr-neutral-black: hsl(0, 0%, 7%);
+
+    --font-weight-thin: 500;
+    --font-weight-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.8125rem;
+}
+
+.wrapper-grid {
+    width: min(80%, 350px);
+    margin: 70px auto;
+    display: grid;
+    gap: 30px;
+}
+
+.wrapper-grid article {
+    border-radius: 7px;
+    padding: 30px 20px;
+    box-shadow: 40px 50px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-grid .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.wrapper-grid .profile-info img {
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.wrapper-grid article .person-info {
+    display: inline-block;
+    line-height: 1.3;
+}
+
+.wrapper-grid .person-info .title {
+    font-size: 0.68rem;
+}
+
+.wrapper-grid .comment {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+}
+
+.wrapper-grid blockquote {
+    line-height: 1.4;
+}
+
+.wrapper-grid .daniel {
+    background-color: var(--clr-purple-500);
+    color: var(--clr-neutral-white);
+}
+
+.wrapper-grid .daniel img {
+    border-color: var(--clr-purple-300);
+}
+
+.wrapper-grid .jonathan {
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-neutral-white);
+}
+
+.wrapper-grid .jonathan img,
+.wrapper-grid .jeanette img,
+.wrapper-grid .kira img {
+    border-color: transparent;
+}
+
+.wrapper-grid .jeanette,
+.wrapper-grid .kira {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-neutral-500);
+}
+
+.wrapper-grid .patrick {
+    background-color: var(--clr-neutral-darkblue);
+    color: var(--clr-neutral-200);
+}
+
+.wrapper-grid .patrick img {
+    border-color: var(--clr-purple-500);
+}
