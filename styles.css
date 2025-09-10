@@ -107,3 +107,33 @@ body {
 .wrapper-grid .patrick img {
     border-color: var(--clr-purple-500);
 }
+
+@media (min-width: 1200px) {
+    .wrapper-grid {
+        width: 80%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .daniel {
+        position: relative;
+        grid-column: 1 / span 2;
+        z-index: 0;
+    }
+
+    .daniel::before {
+        content: url(images/bg-pattern-quotation.svg);
+        position: absolute;
+        top: 0;
+        right: 15%;
+        z-index: -1;
+    }
+
+    .kira {
+        grid-column: 4 / -1;
+        grid-row: 1 / span 2;
+    }
+
+    .patrick {
+        grid-column: 2 / span 2;
+    }
+}
